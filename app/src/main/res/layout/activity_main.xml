@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAppBackground"
+
+    tools:context="com.example.ryanelliott.mycraigsearch.MainActivity">
+
+
+    <ListView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/listView"
+        android:layout_marginStart="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:dividerHeight="16dp"
+        android:divider="@color/colorAppBackground"
+        android:background="@color/colorItemBackground"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true" />
+</android.support.constraint.ConstraintLayout>

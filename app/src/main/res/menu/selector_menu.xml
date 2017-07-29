@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="always"
+        android:id="@+id/mnuSelectorDelete"
+        android:title="delete"
+        android:visible="false" />
+    <item android:icon="@android:drawable/ic_menu_send"
+        android:id="@+id/mnuSelectorGo"
+        app:showAsAction="always"
+        android:title="Go"
+        android:visible="false" />
+</menu>

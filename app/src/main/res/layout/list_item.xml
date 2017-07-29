@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <TextView
+        android:text="Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemTitle"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimaryDark"
+
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:text="Date Posted"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemDate"
+        android:textStyle="normal|italic"
+        app:layout_constraintTop_toBottomOf="@+id/itemTitle"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:textAlignment="textEnd" />
+
+    <Button
+        android:text="Go to listing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemLink"
+        app:layout_constraintTop_toBottomOf="@+id/itemImage"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:autoLink="web" />
+
+    <TextView
+        android:text="Description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemDescription"
+        app:layout_constraintTop_toBottomOf="@+id/itemDate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@color/colorPendingImage"
+        android:id="@+id/itemImage"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescription"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:contentDescription="item image"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+</android.support.constraint.ConstraintLayout>
