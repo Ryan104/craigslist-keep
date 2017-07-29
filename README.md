@@ -3,7 +3,7 @@
 
 *Need an area rug for your new place?* Save the search to the list and quickly check new postings whenever you want!
 
-![results view](.\myCraig_screen_1.png) ![keep view](.\myCraig_screen_2.png)
+![results view](myCraig_screen_1.png) ![keep view](myCraig_screen_2.png)
 
 Made with native Android.
 
